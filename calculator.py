@@ -44,7 +44,10 @@ while True:
             result = cube(tokenized_input[1]) 
 
         elif tokenized_input[0] == "pow":
-            result = power(tokenized_input[1],tokenized_input[2])           
+            result = power(tokenized_input[1],tokenized_input[2]) 
+
+        elif tokenized_input[0] == "mod":
+            result = mod(tokenized_input[1],tokenized_input[2])            
         
     elif user_expression =="q":
         break
