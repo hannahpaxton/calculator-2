@@ -47,7 +47,10 @@ while True:
             result = power(tokenized_input[1],tokenized_input[2]) 
 
         elif tokenized_input[0] == "mod":
-            result = mod(tokenized_input[1],tokenized_input[2])            
+            result = mod(tokenized_input[1],tokenized_input[2])       
+
+        elif tokenized_input[0] == "x+":
+            result = add_mult(tokenized_input[1],tokenized_input[2],tokenized_input[3])      
         
     elif user_expression =="q":
         break
