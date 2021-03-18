@@ -38,7 +38,10 @@ while True:
             result = divide(tokenized_input[1],tokenized_input[2])    
 
         elif tokenized_input[0] == "square":
-            result = square(tokenized_input[1])       
+            result = square(tokenized_input[1]) 
+
+        elif tokenized_input[0] == "cube":
+            result = cube(tokenized_input[1])         
         
     elif user_expression =="q":
         break
