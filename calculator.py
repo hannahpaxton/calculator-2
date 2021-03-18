@@ -21,20 +21,24 @@ while True:
     user_expression = input("Enter your equation!")
     if user_expression != "q":
         tokenized_input = user_expression.split(' ')
-        num1 = int(tokenized_input[1])
-        num2 = int(tokenized_input[2])
 
+        for i in range(1, len(tokenized_input)): 
+            tokenized_input[i] = int(tokenized_input[i]) 
+        
         if tokenized_input[0] == "+":
-            result = add(num1,num2)
+            result = add(tokenized_input[1],tokenized_input[2])
 
         elif tokenized_input[0] == "-":
-            result = subtract(num1,num2)
+            result = subtract(tokenized_input[1],tokenized_input[2])
 
         elif tokenized_input[0] == "*":
-            result = multiply(num1,num2)   
+            result = multiply(tokenized_input[1],tokenized_input[2])   
 
         elif tokenized_input[0] == "/":
-            result = divide(num1,num2)        
+            result = divide(tokenized_input[1],tokenized_input[2])    
+
+        elif tokenized_input[0] == "square":
+            result = square(tokenized_input[1])       
         
     elif user_expression =="q":
         break
