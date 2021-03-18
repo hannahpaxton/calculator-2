@@ -31,7 +31,10 @@ while True:
             result = subtract(num1,num2)
 
         elif tokenized_input[0] == "*":
-            result = multiply(num1,num2)          
+            result = multiply(num1,num2)   
+
+        elif tokenized_input[0] == "/":
+            result = divide(num1,num2)        
         
     elif user_expression =="q":
         break
