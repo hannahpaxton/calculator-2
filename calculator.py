@@ -29,6 +29,9 @@ while True:
 
         elif tokenized_input[0] == "-":
             result = subtract(num1,num2)
+
+        elif tokenized_input[0] == "*":
+            result = multiply(num1,num2)          
         
     elif user_expression =="q":
         break
