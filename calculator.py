@@ -50,7 +50,10 @@ while True:
             result = mod(tokenized_input[1],tokenized_input[2])       
 
         elif tokenized_input[0] == "x+":
-            result = add_mult(tokenized_input[1],tokenized_input[2],tokenized_input[3])      
+            result = add_mult(tokenized_input[1],tokenized_input[2],tokenized_input[3])  
+
+        elif tokenized_input[0] == "cubes+":
+            result = add_cubes(tokenized_input[1],tokenized_input[2])    
         
     elif user_expression =="q":
         break
